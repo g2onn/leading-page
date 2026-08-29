@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G2ON</title>
+  <meta name="description" content="Transformamos ideias em software. Soluções digitais inovadoras do conceito ao deploy.">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="G2ON | Desenvolvimento de Software & Tech">
+  <meta property="og:description" content="Transformamos ideias em software. Soluções digitais inovadoras do conceito ao deploy.">
+  <meta property="og:url" content="https://www.g2on.com.br">
+  <meta property="og:image" content="https://www.g2on.com.br/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="G2ON | Desenvolvimento de Software & Tech">
+  <meta name="twitter:description" content="Transformamos ideias em software. Soluções digitais inovadoras do conceito ao deploy.">
+  <meta name="twitter:image" content="https://www.g2on.com.br/og-image.png">
+
+  <!-- CDN Links -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <svg class="preloader-icon" viewBox="0 0 32 32" width="80" height="80" fill="#C8FF00">
+        <path d="M16 0 L19.5 12.5 L32 16 L19.5 19.5 L16 32 L12.5 19.5 L0 16 L12.5 12.5 Z"/>
+      </svg>
+      <span class="preloader-text">G2ON</span>
+    </div>
+    <div class="preloader-bar-wrapper">
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="#hero" class="nav-logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" width="32" height="32" fill="#C8FF00">
+          <path d="M16 0 L19.5 12.5 L32 16 L19.5 19.5 L16 32 L12.5 19.5 L0 16 L12.5 12.5 Z"/>
+        </svg>
+        <span class="logo-text">G2ON</span>
+      </a>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link">Início</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#services" class="nav-link">Serviços</a>
+        <a href="#process" class="nav-link">Processo</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </div>
+      <a href="#contact" class="nav-cta magnetic-btn">Fale Conosco</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-content">
+        <div class="hero-label"><span>G2ON · Software & Tech</span></div>
+        <h1 class="hero-title">
+          <div class="title-line">
+            <span class="word" data-text="Transformamos"><span class="char">T</span><span class="char">r</span><span class="char">a</span><span class="char">n</span><span class="char">s</span><span class="char">f</span><span class="char">o</span><span class="char">r</span><span class="char">m</span><span class="char">a</span><span class="char">m</span><span class="char">o</span><span class="char">s</span></span>
+          </div>
+          <div class="title-line">
+            <span class="word" data-text="ideias"><span class="char">i</span><span class="char">d</span><span class="char">e</span><span class="char">i</span><span class="char">a</span><span class="char">s</span></span>
+            <span class="word" data-text="em"><span class="char">e</span><span class="char">m</span></span>
+          </div>
+          <div class="title-line">
+            <span class="word highlight" data-text="software."><span class="char">s</span><span class="char">o</span><span class="char">f</span><span class="char">t</span><span class="char">w</span><span class="char">a</span><span class="char">r</span><span class="char">e</span><span class="char">.</span></span>
+          </div>
+        </h1>
+        <p class="hero-subtitle">Desenvolvimento de soluções digitais que impulsionam negócios do conceito ao deploy.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="hero-btn primary magnetic-btn">Iniciar Projeto</a>
+          <a href="#process" class="hero-btn secondary magnetic-btn">Nosso Processo</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-grid">
+          <div class="about-left">
+            <span class="section-tag">Sobre nós</span>
+            <h2 class="section-title">Engenharia de software<br>com visão de futuro</h2>
+            <div class="about-description">
+              <p>A G2ON é uma software house que desenvolve produtos digitais sob medida. Unimos engenharia de software sólida a um processo de design cuidadoso para entregar soluções que resolvem problemas reais.</p>
+              <p>Acompanhamos cada projeto do planejamento à entrega, em contato direto com o cliente, com atenção à qualidade técnica em cada etapa.</p>
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="50">0</span>
+                <span class="stat-suffix">+</span>
+                <span class="stat-label">Projetos Entregues</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="30">0</span>
+                <span class="stat-suffix">+</span>
+                <span class="stat-label">Clientes Ativos</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-suffix">+</span>
+                <span class="stat-label">Tecnologias</span>
+              </div>
+            </div>
+            <div class="cube-scene">
+              <div class="cube">
+                <div class="cube-face front"></div>
+                <div class="cube-face back"></div>
+                <div class="cube-face right"></div>
+                <div class="cube-face left"></div>
+                <div class="cube-face top"></div>
+                <div class="cube-face bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES (Group 1) -->
+    <section id="features" class="section features">
+      <div class="container">
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <div class="feature-card-wrapper type-1">
+            <div class="feature-card">
+              <div class="feature-header">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>g2on.web</span>
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Aplica&ccedil;&otilde;es<br>Web sob<br>Medida</h3>
+                <p class="feature-text">Ex: Plataformas SaaS, e-commerces<br>robustos, pain&eacute;is administrativos e<br>sistemas de gest&atilde;o.</p>
+                <div class="feature-dots">
+                  <div class="dot active"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="feature-card-wrapper type-2">
+            <div class="feature-card">
+              <div class="feature-header">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                <span>g2on.mobile</span>
+                <div class="header-right-dots"><div class="dot"></div><div class="dot active"></div></div>
+              </div>
+              <div class="feature-graphic-globe">
+                <div class="globe-satellite"></div>
+              </div>
+              <p class="feature-text muted">Aplicativos iOS &amp; Android<br>Ex: Apps de Delivery, Finan&ccedil;as,<br>Redes Sociais e E-commerce.</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="feature-card-wrapper type-3">
+            <div class="feature-card">
+              <div class="feature-header">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <span>g2on.trust</span>
+              </div>
+              <div class="feature-image-wrapper">
+                <img src="tech_woman_portrait.jpg" alt="Tech Professional" class="feature-image">
+              </div>
+              <div class="feature-title-overlay">
+                <span class="overlay-text overlay-top">A base técnica</span>
+                <span class="overlay-text overlay-bottom">para o seu<br>negócio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Serviços</span>
+          <h2 class="section-title">Soluções que impulsionam<br>negócios</h2>
+        </div>
+
+        <div class="tech-grid">
+          <!-- Card 1 -->
+          <div class="tech-card">
+            <div class="tech-header">
+              <span class="tech-code">[\}Engenharia de Software</span>
+              <svg class="tech-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+            </div>
+            <p class="tech-desc">
+              // Código limpo, testável e de fácil manutenção,<br>
+              // seguindo boas práticas de arquitetura.
+            </p>
+            <div class="tech-graphic dot-matrix-1">
+              <div class="tech-stat">
+                <div class="tech-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <div class="tech-metric">
+                  <span class="tech-metric-value">100%</span>
+                  <span class="tech-metric-label">Cobertura de testes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="tech-card">
+            <div class="tech-header">
+              <span class="tech-code">[.O]Integração Contínua</span>
+              <svg class="tech-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+            </div>
+            <p class="tech-desc">
+              // Pipelines de CI/CD automatizados: cada commit<br>
+              // é testado antes de ir para produção.
+            </p>
+            <div class="tech-graphic dot-matrix-2">
+              <div class="tech-stat">
+                <div class="tech-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                </div>
+                <div class="tech-metric">
+                  <span class="tech-metric-value">&lt;5min</span>
+                  <span class="tech-metric-label">Tempo médio de deploy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="tech-card">
+            <div class="tech-header">
+              <span class="tech-code">[>>]Arquitetura Cloud</span>
+              <svg class="tech-arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+            </div>
+            <p class="tech-desc">
+              // Infraestrutura resiliente e elástica na nuvem,<br>
+              // escalando automaticamente com a sua demanda.
+            </p>
+            <div class="tech-graphic dot-matrix-3">
+              <div class="tech-stat">
+                <div class="tech-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                </div>
+                <div class="tech-metric">
+                  <span class="tech-metric-value">99.9%</span>
+                  <span class="tech-metric-label">Uptime garantido</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase / Product Pin Section -->
+    <div class="showcase-wrapper" style="position: relative; width: 100%;">
+      <section id="showcase" class="showcase-container">
+        <div class="showcase-pin">
+          <div class="showcase-track">
+            <!-- Page 1 -->
+          <div class="showcase-page">
+            <div class="showcase-panel showcase-left">
+              <div class="showcase-graphic">
+                <!-- Abstract Shield/Lock Graphic -->
+                <div class="graphic-shield">
+                  <div class="icon-ring"></div>
+                  <svg viewBox="0 0 24 24" width="80" height="80" fill="none" stroke="var(--green)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <div class="icon-pulse"></div>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-panel showcase-right">
+              <div class="showcase-content">
+                <span class="showcase-tag">g2on.security</span>
+                <h2 class="showcase-title">Segurança em Nível Bancário</h2>
+                <p class="showcase-desc">Seus dados protegidos com criptografia de ponta a ponta, conformidade com os principais padrões de mercado e arquitetura Zero Trust em todos os sistemas.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Page 2 -->
+          <div class="showcase-page">
+            <div class="showcase-panel showcase-left">
+              <div class="showcase-graphic">
+                <!-- Abstract Speed/Network Graphic -->
+                <div class="graphic-speed">
+                  <div class="icon-ring"></div>
+                  <svg viewBox="0 0 24 24" width="80" height="80" fill="none" stroke="var(--green)" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  <div class="icon-pulse"></div>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-panel showcase-right">
+              <div class="showcase-content">
+                <span class="showcase-tag">g2on.speed</span>
+                <h2 class="showcase-title">Performance Extrema</h2>
+                <p class="showcase-desc">Otimização em cada camada da aplicação: baixa latência, renderização rápida e consultas eficientes para uma experiência fluida ao usuário final.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Page 3 -->
+          <div class="showcase-page">
+            <div class="showcase-panel showcase-left">
+              <div class="showcase-graphic">
+                <!-- Abstract Data/Dashboard Graphic -->
+                <div class="graphic-data">
+                  <div class="icon-ring"></div>
+                  <svg viewBox="0 0 24 24" width="80" height="80" fill="none" stroke="var(--green)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M3 9h18M9 21V9"/></svg>
+                  <div class="icon-pulse"></div>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-panel showcase-right">
+              <div class="showcase-content">
+                <span class="showcase-tag">g2on.data</span>
+                <h2 class="showcase-title">Análise em Tempo Real</h2>
+                <p class="showcase-desc">Decisões baseadas em métricas confiáveis, com dashboards integrados que transformam dados brutos em informações claras para o seu negócio.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="showcase-controls">
+            <button type="button" class="showcase-arrow showcase-prev" aria-label="Anterior">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="showcase-nav">
+              <button type="button" class="nav-dot active" aria-label="Ir para o slide 1"></button>
+              <button type="button" class="nav-dot" aria-label="Ir para o slide 2"></button>
+              <button type="button" class="nav-dot" aria-label="Ir para o slide 3"></button>
+            </div>
+            <button type="button" class="showcase-arrow showcase-next" aria-label="Próximo">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PROCESS -->
+    <section id="process" class="section process">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Processo</span>
+          <h2 class="section-title">Do conceito ao deploy</h2>
+        </div>
+        <div class="process-timeline">
+          <div class="timeline-track"><div class="timeline-progress"></div></div>
+          <div class="process-step">
+            <div class="step-marker">
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Discovery</h3>
+              <p class="step-text">Entendemos o seu negócio, levantamos os requisitos e definimos um escopo claro para o projeto.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-marker">
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              </div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Design</h3>
+              <p class="step-text">Prototipamos interfaces intuitivas e validamos cada detalhe da experiência antes de iniciar o desenvolvimento.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-marker">
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Desenvolvimento</h3>
+              <p class="step-text">Código limpo, arquitetura escalável e entregas iterativas. Você acompanha cada sprint em tempo real.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-marker">
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Deploy & Suporte</h3>
+              <p class="step-text">Lançamento monitorado, testes rigorosos e suporte contínuo para garantir estabilidade e evolução.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="section cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">Pronto para transformar<br>sua ideia em realidade?</h2>
+          <p class="cta-subtitle">Vamos conversar sobre seu próximo projeto.</p>
+          <a href="https://instagram.com/g2on_" target="_blank" rel="noopener" class="cta-button magnetic-btn">Entrar em Contato</a>
+        </div>
+        <div class="cta-orbs">
+          <div class="orb"></div>
+          <div class="orb"></div>
+          <div class="orb"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <svg class="logo-icon" viewBox="0 0 32 32" width="32" height="32" fill="#C8FF00">
+              <path d="M16 0 L19.5 12.5 L32 16 L19.5 19.5 L16 32 L12.5 19.5 L0 16 L12.5 12.5 Z"/>
+            </svg>
+            <span class="logo-text">G2ON</span>
+          </a>
+          <p class="footer-tagline">Desenvolvimento de software & tech</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://instagram.com/g2on_" target="_blank" rel="noopener" class="social-link">
+            <!-- Instagram SVG icon -->
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            <span>@g2on_</span>
+          </a>
+          <a href="https://www.g2on.com.br" target="_blank" rel="noopener" class="social-link">
+            <!-- Globe SVG icon -->
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>www.g2on.com.br</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 G2ON. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
